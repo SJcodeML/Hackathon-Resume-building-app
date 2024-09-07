@@ -1,0 +1,22 @@
+/* print.css */
+@media print {
+    body * {
+      visibility: hidden;
+    }
+  
+    #resumeOutput, #resumeOutput * {
+      visibility: visible;
+    }
+  
+    #resumeOutput {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  
+    #printResume {
+      display: none; /* Hide the Print/Download button in the printed version */
+    }
+  }
+  

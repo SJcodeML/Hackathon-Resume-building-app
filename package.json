@@ -1,0 +1,11 @@
+{
+  "name": "hackathon-resume-building-app",
+  "version": "1.0.0",
+  "description": "It is a Resume Builder APP . It will take your basic information and some educational information and build user's Resume .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

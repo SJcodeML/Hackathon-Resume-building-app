@@ -1,0 +1,131 @@
+body {
+  font-family: 'Roboto', sans-serif; /* More modern and clean font */
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Added more prominent shadow */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Form Section */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Fancy Resume Styling */
+.resume {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  color: #333;
+}
+
+/* Header Section for Name */
+.resume-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-header h2 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: #007bff; /* Highlighted name in a primary color */
+}
+
+.resume-header p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+/* Resume Section Styling */
+.resume-section {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0; /* Section dividers */
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+}
+
+.resume-section h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Adds a modern touch */
+}
+
+.resume-section p, 
+.resume-section span {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Skills in a Pill-Like Style */
+.skills-list span {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+}
