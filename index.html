@@ -40,7 +40,7 @@
     <input type="text" placeholder=" Enter your Name"class="nameField" id="fbField" class="form-control" /><br>
 
     <label for="instaField" class="multiplelabel">Instagram Link</label><br>
-    <input type="text" placeholder=" Enter your Name" class="nameField" id="nameField" class="form-control" /><br>
+    <input type="text" placeholder=" Enter your Name" class="nameField" id="instaField" class="form-control" /><br>
 
     <label for="linkedField" class="multiplelabel">Linkdin Link</label><br>
     <input type="text" placeholder=" Enter your Name" class="nameField" id="linkedField" class="form-control" />
@@ -59,7 +59,7 @@
     <h2 id="secondheading">Personal Information</h2>
 
     <label for="" class="multiplelabel" >Objective</label><br>
-    <textarea name="" class="nameField" id="nameField" placeholder="Enter Here" ></textarea>
+    <textarea name="" class="nameField" id="objectiveField" placeholder="Enter Here" ></textarea>
     <br>
     
     <div id="we">
@@ -68,9 +68,9 @@
     
 
 
-    <div>
+    
         <button onclick="addNewWEField()" class="button" id="weAddButton">Add</button>
-    </div>
+    
   </div>
 
 
@@ -80,16 +80,106 @@
     <textarea name="" class="eqField" id="nameField" placeholder="Enter Here" ></textarea>
     <br>
 
-    <div>
+    
         <button onclick="addNewAQField()" class="button" id="aqAddButton">Add</button>
-    </div>
+    
     </div>
     
 </div>
 
-
+<button onclick ="generateCV()" class="button" style="background-color:rgb(56, 56, 98) ;">Generate My Resume</button>
 </div>
-<button class="button" style="background-color:rgb(56, 56, 98) ;">Generate My Resume</button>
+
+<!-- RESUME TEMPLATE -->
+
+<div class="cv-template" style="display:flex ; width: 100%; height: 100vh;" >
+
+  
+
+
+
+    <!-- First coloumn -->
+    <div class="firstcol" style="background-color: black; width: 25%; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">  
+      <div >
+      <img class="mainimg" src="https://th.bing.com/th/id/OIP.DE4oVxhJBtT-fkZwb42nRQAAAA?pid=ImgDet&w=183&h=251&c=7&dpr=1.3" alt="template image" />  
+      <div style="text-align:center;  color:rgb(74, 74, 153)">  
+        <p id="nameT1">Sidra Jabin</p>  
+        <p id="contactT">+216465231, +516521231</p>  
+        <p id="addressT">h.no lsdknncm, sdmckm</p> 
+        <hr>
+        
+        <p style="color:rgb(203, 203, 210)" >
+          <a id="fbT" href="#1" >https://www.facebook.com/reel/2734104226767135</a>
+        </p>
+        
+        <p>
+          <a id="instaT" href="#1" >https://www.instagram.com/</a>
+        </p>
+
+        <p>
+          <a id="linkedT" href="#1" >https://www.google.com/</a>
+        </p>
+
+
+      </div> 
+    </div> 
+    </div>
+
+
+
+
+
+    <!-- second column -->
+    <div class="secondcol" style="width: 75%; height: 100vh; background-color: rgb(80, 78, 78); font-weight: 980; ">  
+      <h1 id="nameT2" style="color: white; text-align: center;">SIDRA JABIN</h1>  
+      
+
+      <!-- objective section -->
+      <div style="background-color: rgb(15, 13, 13); color: white; padding: 10px; ">  
+        Objectives  
+      </div>  
+      
+      <div style="color: black; background-color: rgb(245, 221, 221);">  
+        <p id="objectiveT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi nam harum itaque possimus. Sunt numquam, perferendis corporis autem nulla tempore quod harum voluptatibus sapiente deleniti exercitationem veritatis nostrum maxime!
+        Iusto laborum id fugit delectus, deleniti maxime repellendus ea? Aliquam suscipit laborum reiciendis voluptate iusto, tempore quia eligendi recusandae? Quam qu  
+        is, ea delectus dolores obcaecati necessitatibus dicta! Suscipit labore expedita amet at similique dolor id natus omnis eaque, nulla voluptatibus.</p>  
+      </div>  
+
+      <!-- experience section -->
+      <div style="background-color: rgb(15, 13, 13); color: white; padding: 10px; ">  
+        Work Experience 
+      </div>  
+      
+      <div style="color: black; background-color: rgb(245, 221, 221);">  
+        <p id="weT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi nam harum itaque possimus. Sunt numquam, perferendis corporis autem nult ab omnis itaque hic dolorem.  
+       
+      </div> 
+      
+      
+      <!-- Acedemic qualififcation -->
+
+      <div style="background-color: rgb(15, 13, 13); color: white; padding: 10px; ">  
+        Academic Qualifications 
+      </div>  
+      
+      <div style="color: black; background-color: rgb(245, 221, 221);">  
+        <p id="aqT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi nam harum itaque possimus. Sunt numquam, perferendis corporis autem nulla tempore quod harum voluptatibus sapiente deleniti exercitationem veritatis nostrum maxime!
+        Iusto laborum id fugit delectus, deleniti maxime repellendus ea? Aliquam suscipit laborum reiciendis voluptate iusto, tempore quia eligendi recusandae? Quam quia aperiam vel voluptates repellat ab omnis itaque hic dolorem.  
+       
+      </div> 
+      <!-- Button -->
+
+    <div>
+      <button onclick="printcv()" class="button" >Print CV</button>
+  </div>
+      
+    </div>
+    
+  
+</div>
+
+
+
 
   <script src="app.js"></script>
 </body>
