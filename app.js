@@ -1,31 +1,33 @@
-// Selecting the form and resume elements
-var resumeForm = document.getElementById('resumeForm');
-var outputName = document.getElementById('outputName');
-var outputEmail = document.getElementById('outputEmail');
-var outputAddress = document.getElementById('outputAddress');
-var outputEducation = document.getElementById('outputEducation');
-var outputSkills = document.getElementById('outputSkills');
-var resumeOutput = document.getElementById('resumeOutput');
-var printButton = document.getElementById('printResume');
-// Form submission event listener
-resumeForm.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevents the form from refreshing the page
-    // Retrieving form values
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var address = document.getElementById('address').value;
-    var education = document.getElementById('education').value;
-    var skills = document.getElementById('skills').value;
-    // Populating the resume section with form values
-    outputName.textContent = name;
-    outputEmail.textContent = email;
-    outputAddress.textContent = address;
-    outputEducation.textContent = education;
-    outputSkills.textContent = skills;
-    // Display the generated resume
-    resumeOutput.classList.remove('hidden');
-});
-// Print or download resume when the button is clicked
-printButton.addEventListener('click', function () {
-    window.print(); // This triggers the browser's print dialog for printing/downloading as PDF
-});
+"use strict";
+// function addNewWEField(){
+//   let newNode = document.createElement("textarea")
+//   newNode.classList.add("weField")
+//   newNode.classList.add("multiplelabel")
+//   newNode.classList.add("nameField")
+Object.defineProperty(exports, "__esModule", { value: true });
+//   let weOb = document.getElementById("we");
+//   let weAddButtonOb = document.getElementById("weAddButton");
+//   weOb?.insertBefore(newNode , weAddButtonOb);
+// }
+function addNewWEField() {
+    let newNode = document.createElement("textarea");
+    newNode.classList.add("weField");
+    newNode.classList.add("multiplelabel");
+    newNode.classList.add("nameField");
+    newNode.setAttribute("placeholder", "Enter Here"); // Set placeholder for the new textarea  
+    let weOb = document.getElementById("we");
+    let weAddButtonOb = document.getElementById("weAddButton");
+    // Insert the new textarea before the button's parent div  
+    weOb?.insertBefore(newNode, weAddButtonOb);
+}
+function addNewAQField() {
+    let newNode = document.createElement("textarea");
+    newNode.classList.add("eqField");
+    newNode.classList.add("multiplelabel");
+    newNode.classList.add("nameField");
+    newNode.setAttribute("placeholder", "Enter Here"); // Set placeholder for the new textarea  
+    let aqOb = document.getElementById("orr");
+    let aqAddButtonOb = document.getElementById("aqAddButton");
+    // Insert the new textarea before the button's parent div  
+    aqOb?.insertBefore(newNode, aqAddButtonOb);
+}

@@ -8,63 +8,88 @@
 </head>
 <body>
   <div class="container">
-    <h1>Resume Builder</h1>
+    <div class="mainheading" style="background-color: black;">
+        <h1 style="color: rgb(213, 213, 179); text-align: center;">RESUME BUILDER APP  </h1>
+        <P style="color: rgb(241, 241, 243); font-size: 20px; text-align: center;" >Made By SIDRA JABIN</P>
+    </div>
 
-    <!-- Form Section -->
-    <form id="resumeForm">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name" required />
-      </div>
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email" required />
-      </div>
 
-      <div class="form-group">
-        <label for="address">Address:</label>
-        <textarea id="address" placeholder="Enter your address" required></textarea>
-      </div>
+ <!-- First Half starts from here -->
+    <div class="firsthalf">
+    <h2 id="secondheading">Personal Information</h2>
+    
+    <label for="nameField" class="multiplelabel" >Your Name</label><br>
+    <input type="text" placeholder=" Enter your Name" class="nameField" id="nameField" class="form-control" />
+    <br>
 
-      <div class="form-group">
-        <label for="education">Education:</label>
-        <textarea id="education" placeholder="Enter your education details" required></textarea>
-      </div>
+    <label for="ContactField" class="multiplelabel" >Your Contact</label><br>
+    <input type="text" placeholder=" Enter your Name" class="nameField" id="ContactField" class="form-control" />
+    <br>
 
-      <div class="form-group">
-        <label for="skills">Skills:</label>
-        <input type="text" id="skills" placeholder="Enter your skills" required />
-      </div>
+    <label for="addressField" class="multiplelabel"  >Your Address</label><br>
+    <textarea name="" class="nameField" id="addressField" placeholder="Enter Here" ></textarea>
+    <br>
 
-      <button type="submit">Generate Resume</button>
-    </form>
+    <!-- <label for="nameField" class="multiplelabel">Your Name</label><br>
+    <input type="text" placeholder=" Enter your Name" class="nameField" id="nameField" class="form-control" /> -->
 
-    <!-- Resume Display Section -->
-    <div id="resumeOutput" class="resume-output hidden">
-      <div id="resumeContent" class="resume">
-        <h2>Your Resume</h2>
-        <div class="resume-section">
-          <strong>Name:</strong> <span id="outputName"></span>
-        </div>
-        <div class="resume-section">
-          <strong>Email:</strong> <span id="outputEmail"></span>
-        </div>
-        <div class="resume-section">
-          <strong>Address:</strong> <span id="outputAddress"></span>
-        </div>
-        <div class="resume-section">
-          <strong>Education:</strong> <p id="outputEducation"></p>
-        </div>
-        <div class="resume-section">
-          <strong>Skills:</strong> <p id="outputSkills"></p>
-        </div>
-      </div>
+    <p style="color: bisque; font-size: x-large;">Important Links </p>
 
-      <!-- Button for Printing/Downloading -->
-      <button id="printResume">Print/Download Resume</button>
+    <label for="fbField" class="multiplelabel">Facebook Link</label><br>
+    <input type="text" placeholder=" Enter your Name"class="nameField" id="fbField" class="form-control" /><br>
+
+    <label for="instaField" class="multiplelabel">Instagram Link</label><br>
+    <input type="text" placeholder=" Enter your Name" class="nameField" id="nameField" class="form-control" /><br>
+
+    <label for="linkedField" class="multiplelabel">Linkdin Link</label><br>
+    <input type="text" placeholder=" Enter your Name" class="nameField" id="linkedField" class="form-control" />
+
+
+
+ </div>
+
+
+
+
+
+
+ <!-- second Half starts from here -->
+<div class="secondhalf">
+    <h2 id="secondheading">Personal Information</h2>
+
+    <label for="" class="multiplelabel" >Objective</label><br>
+    <textarea name="" class="nameField" id="nameField" placeholder="Enter Here" ></textarea>
+    <br>
+    
+    <div id="we">
+    <label for="" class="multiplelabel" >Work Experience</label><br>
+    <textarea name="" class="weField nameField" id="nameField" placeholder="Enter Here" ></textarea>
+    
+
+
+    <div>
+        <button onclick="addNewWEField()" class="button" id="weAddButton">Add</button>
     </div>
   </div>
+
+
+    <div id="orr">
+    <label for=""  class="multiplelabel">Academic Qualification</label><br>
+    <!-- <input type="text" placeholder=" Enter your Name" id="nameField" class="form-control"  /> -->
+    <textarea name="" class="eqField" id="nameField" placeholder="Enter Here" ></textarea>
+    <br>
+
+    <div>
+        <button onclick="addNewAQField()" class="button" id="aqAddButton">Add</button>
+    </div>
+    </div>
+    
+</div>
+
+
+</div>
+<button class="button" style="background-color:rgb(56, 56, 98) ;">Generate My Resume</button>
 
   <script src="app.js"></script>
 </body>

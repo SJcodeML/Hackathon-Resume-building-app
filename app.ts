@@ -1,36 +1,30 @@
-// Selecting the form and resume elements
-const resumeForm = document.getElementById('resumeForm') as HTMLFormElement;
-const outputName = document.getElementById('outputName') as HTMLSpanElement;
-const outputEmail = document.getElementById('outputEmail') as HTMLSpanElement;
-const outputAddress = document.getElementById('outputAddress') as HTMLSpanElement;
-const outputEducation = document.getElementById('outputEducation') as HTMLParagraphElement;
-const outputSkills = document.getElementById('outputSkills') as HTMLParagraphElement;
-const resumeOutput = document.getElementById('resumeOutput') as HTMLDivElement;
-const printButton = document.getElementById('printResume') as HTMLButtonElement;
 
-// Form submission event listener
-resumeForm.addEventListener('submit', (event: Event) => {
-  event.preventDefault();  // Prevents the form from refreshing the page
 
-  // Retrieving form values
-  const name = (document.getElementById('name') as HTMLInputElement).value;
-  const email = (document.getElementById('email') as HTMLInputElement).value;
-  const address = (document.getElementById('address') as HTMLTextAreaElement).value;
-  const education = (document.getElementById('education') as HTMLTextAreaElement).value;
-  const skills = (document.getElementById('skills') as HTMLInputElement).value;
 
-  // Populating the resume section with form values
-  outputName.textContent = name;
-  outputEmail.textContent = email;
-  outputAddress.textContent = address;
-  outputEducation.textContent = education;
-  outputSkills.textContent = skills;
+function addNewWEField() {  
+  let newNode = document.createElement("textarea");  
+  newNode.classList.add("weField");  
+  newNode.classList.add("multiplelabel");  
+  newNode.classList.add("nameField");  
+  newNode.setAttribute("placeholder", "Enter Here"); // Set placeholder for the new textarea  
+  
+  let weOb = document.getElementById("we");  
+  let weAddButtonOb:HTMLElement|null = document.getElementById("weAddButton");  
 
-  // Display the generated resume
-  resumeOutput.classList.remove('hidden');
-});
+  // Insert the new textarea before the button's parent div  
+  weOb?.insertBefore(newNode, weAddButtonOb);  
+}
 
-// Print or download resume when the button is clicked
-printButton.addEventListener('click', () => {
-  window.print();  // This triggers the browser's print dialog for printing/downloading as PDF
-});
+function addNewAQField() {  
+  let newNode = document.createElement("textarea");  
+  newNode.classList.add("eqField");  
+  newNode.classList.add("multiplelabel");  
+  newNode.classList.add("nameField");  
+  newNode.setAttribute("placeholder", "Enter Here"); // Set placeholder for the new textarea  
+  
+  let aqOb = document.getElementById("orr");  
+  let aqAddButtonOb:HTMLElement|null = document.getElementById("aqAddButton");  
+
+  // Insert the new textarea before the button's parent div  
+  aqOb?.insertBefore(newNode, aqAddButtonOb);  
+}
